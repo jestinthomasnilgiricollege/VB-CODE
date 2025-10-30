@@ -1,0 +1,12 @@
+*program 8*
+
+SQL> create table ED (id number(5) primary key , name varchar(20), age number(5) , gender varchar(1) , salary number (10));
+
+SQL> insert into ED values (1,'hari',20,'m',20000);
+SQL> insert into ED values (2,'hadi',21,'m',25000);
+SQL> insert into ED values (3,'nafi',20,'m',15000);
+SQL> insert into ED values (4,'farsil',23,'m',15000);
+
+SQL> select * from ed where age<22;
+SQL> select * from ed where age<22 and salary >= 20000;
+SQL> select * from ed order by name;
