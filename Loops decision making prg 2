@@ -1,0 +1,26 @@
+Private Sub Command1_Click()
+    Dim n As Integer, a As Integer, b As Integer, temp As Integer, i As Integer
+    n = Val(Text1.Text)
+    Text1.Text = ""
+    a = 0: b = 1
+    For i = 1 To n
+        Text1.Text = Text1.Text & a & ""
+        temp = a + b
+        a = b
+        b = temp
+    Next i
+End Sub
+
+Private Sub Command2_Click()
+    Dim n As Integer, sum As Integer, i As Integer
+    n = Val(Text1.Text)
+    sum = 0
+    For i = 1 To n
+        sum = sum + i
+    Next i
+    Text1.Text = sum
+End Sub
+
+Private Sub Command3_Click()
+    Text1.Text = ""
+End Sub
