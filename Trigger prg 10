@@ -1,0 +1,14 @@
+program 10
+
+SQL> create table student(rollno number primary key, name varchar(20) , marks number );
+
+SQL> set serveroutput on;
+SQL> create or replace trigger student_msg
+  2  after insert on student
+  3  begin
+  4  dbms_output.put_line('New stdent record inserted successfully!');
+  5  end;
+  6  /
+
+SQL> insert into student values (1 ,'aju',96);
+_New stdent record inserted successfully!_
