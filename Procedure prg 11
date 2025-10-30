@@ -1,0 +1,11 @@
+program 11
+
+SQL> set serveroutput on ;
+SQL> create or replace procedure welcome_msg as
+  2  begin
+  3  dbms_output.put_line('welcome to pl/sql procedures!');
+  4  end;
+  5  /
+
+SQL> exec welcome_msg;
+_welcome to pl/sql procedures!_
