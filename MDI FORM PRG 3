@@ -1,0 +1,23 @@
+Private Sub MDIForm_Load()
+    Form1.Show
+    Form2.Show
+End Sub
+Private Sub green_Click()
+    ActiveForm.BackColor = vbGreen
+End Sub
+Private Sub red_Click()
+    ActiveForm.BackColor = vbRed
+End Sub
+Private Sub horizontal_Click()
+    MDIForm1.Arrange vbHorizontal
+End Sub
+Private Sub vertical_Click()
+    MDIForm1.Arrange vbVertical
+End Sub
+Private Sub cascade_Click()
+    MDIForm1.Arrange vbCascade
+End Sub
+Private Sub addForm_Click()
+    Dim f As New Form1
+    f.Show
+End Sub
