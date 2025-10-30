@@ -1,0 +1,24 @@
+Private Sub open_Click()
+    CommonDialog1.ShowOpen
+    RichTextBox1.LoadFile CommonDialog1.FileName, rtfText
+End Sub
+
+Private Sub save_Click()
+    CommonDialog1.ShowSave
+    RichTextBox1.SaveFile CommonDialog1.FileName, rtfText
+End Sub
+
+Private Sub font_Click()
+    CommonDialog1.ShowFont
+    RichTextBox1.font.Name = CommonDialog1.FontName
+    RichTextBox1.font.Size = CommonDialog1.FontSize
+    RichTextBox1.font.Bold = CommonDialog1.FontBold
+End Sub
+
+Private Sub clear_Click()
+    RichTextBox1.Text = ""
+End Sub
+
+Private Sub exit_Click()
+    End
+End Sub
