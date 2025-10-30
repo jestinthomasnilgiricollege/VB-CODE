@@ -1,0 +1,20 @@
+*program9*
+
+SQL> create table inv (no number(10) , name varchar(20), rate number(10));
+
+SQL> insert into inv values (1 , 'pencil',5);
+SQL> insert into inv values (2 , 'pen',10);
+SQL> insert into inv values (3, 'book',20);
+
+
+SQL> declare
+  2  begin
+  3  update inv
+  4  set rate = rate+(rate*0.2);
+  5  end;
+  6  /
+
+SQL> alter table inv add item number(20);
+SQL> update inv set item=10 where no=1;
+
+SQL> select *from inv;
