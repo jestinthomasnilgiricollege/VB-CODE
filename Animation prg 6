@@ -1,0 +1,7 @@
+program 6 animation
+
+coding
+
+Private Sub Timer1_timer()
+Picture1.Left=Picture1.Left + 10
+End
